@@ -1,0 +1,18 @@
+# Cache Images for one week
+<FilesMatch "\.(jpg|jpeg|png|gif|ico)$">
+Header set Cache-Control "max-age=6048000, public"
+</FilesMatch>
+
+# Cache CSS and JavaScript files for one week
+<FilesMatch "\.(css|js)$">
+Header set Cache-Control "max-age=6048000, public"
+</FilesMatch>
+
+
+FileETag MTime Size
+
+
+# Set expiration date for images to one year in the future
+<FilesMatch "\.(jpg|jpeg|png|gif|ico)$">
+Header set Expires "max-age=31536000, public"
+</FilesMatch>
