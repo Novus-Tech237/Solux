@@ -384,6 +384,27 @@ a:focus {
   color: #e93f1a;
 }
 
+.service_section .btn-box a{
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #e93f1a;
+  color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.service_section .btn-box{
+  margin-left: 43rem;
+}
+
+.service_section .btn-box a:hover {
+  background-color: transparent;
+  border-color: #e93f1a;
+  color: #e93f1a;
+}
+
 .contact_section .contact_bg {
   background-color: #ffffff;
 }

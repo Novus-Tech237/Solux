@@ -1,5 +1,9 @@
 @media (max-width: 1120px) {}
-
+@media (max-width: 820px) {
+    .service_section .btn-box{
+        margin-left: 22rem;
+    }
+}
 @media (max-width: 992px) {
     .hero_area {
         height: auto;
@@ -48,6 +52,9 @@
         width: 100%;
     }
 
+    .service_section .btn-box{
+        margin-left: 20rem;
+    }
 
     .quote_section .box {
 
@@ -71,11 +78,22 @@
     .info_section .footer_contact {
         width: 315px;
     }
+    .service_section .btn-box{
+        margin-left: 9.2rem;
+    }
 }
 
-@media (max-width: 400px) {}
+@media (max-width: 400px) {
+    .service_section .btn-box{
+        margin-left: 8rem;
+    }
+}
 
-@media (max-width: 360px) {}
+@media (max-width: 360px) {
+    .service_section .btn-box{
+        margin-left: 7rem;
+    }
+}
 
 @media (min-width: 1200px) {
     .container {
