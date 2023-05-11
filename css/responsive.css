@@ -26,11 +26,13 @@
     .slider_section .carousel-indicators {
 
         height: 100%;
+        -webkit-box-direction: b ;
     }
 }
 
 @media (max-width: 768px) {
 
+    
     .slider_section .detail-box {
         text-align: center;
     }
@@ -75,6 +77,9 @@
 @media (max-width: 576px) {}
 
 @media (max-width: 480px) {
+    .detail-box2{
+        margin-top: 2rem;
+    }
     .info_section .footer_contact {
         width: 315px;
     }
@@ -90,6 +95,17 @@
 }
 
 @media (max-width: 360px) {
+    .detail-box2{
+        margin-top: 2rem;
+    }
+    .video-box{
+        position: relative;
+    }
+    iframe{
+        width: 360px;
+        height: 500px;
+        margin-bottom: 22rem;
+    }
     .service_section .btn-box{
         margin-left: 7rem;
     }
