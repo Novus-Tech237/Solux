@@ -115,5 +115,8 @@
     .container {
         max-width: 1170px;
     }
+    .login_panel{
+        overflow: hidden;
+    }
 
 }
