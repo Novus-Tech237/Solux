@@ -147,7 +147,7 @@ form input[type="submit"]{
     font-weight: 500;
     cursor: pointer;
 }
-.button,
+.button_submit,
 .button_login,
 .button_login2{
     color: white;
@@ -155,7 +155,7 @@ form input[type="submit"]{
     border: none;
 }
 
-.button:hover{
+.button_submit:hover{
     background-color: transparent;
     border: 1px solid #e93f1a;
     color: #e93f1a;
