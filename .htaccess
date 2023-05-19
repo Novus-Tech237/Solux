@@ -16,3 +16,10 @@ FileETag MTime Size
 <FilesMatch "\.(jpg|jpeg|png|gif|ico|jfif)$">
 Header set Expires "max-age=31536000, public"
 </FilesMatch>
+
+#Removing the html extension
+RewriteEngine On 
+RewriteCond % 
+{REQUEST_FILENAME} !-f 
+RewriteRule ^([^\.]+)$ $1.html
+[NC, L]
