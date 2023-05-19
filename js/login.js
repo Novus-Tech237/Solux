@@ -8,3 +8,4 @@ const wrapper = document.querySelector(".wrapper"),
             signupHeader.addEventListener("click", () => {
                 wrapper.classList.remove("active");
             });
+
