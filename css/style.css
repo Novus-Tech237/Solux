@@ -134,8 +134,9 @@ a:focus {
 }
 
 .navbar-brand img {
-  width: 20px;
+  width: 50px;
   margin-right: 5px;
+  margin-top: -1rem;
 }
 
 .navbar-brand span {
