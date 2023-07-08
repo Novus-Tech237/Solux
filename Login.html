@@ -99,12 +99,12 @@
     </header>
     <div class="signup-login_form">
       <section class="wrapper">
-        <div class="form signup">
-               
+        <div class="form signup"> 
           <header style="color:#e93f1a">Signup</header>
-          <form action="#">
-              <input type="text" name="user_name" placeholder="Full Name" required />
-              <input type="email" name="user_email" placeholder="Email Address" required />
+         
+          <form method="POST" action="connection.php">
+              <input type="text" name="username" placeholder="Full Name" required />
+              <input type="text" name="user_contact" placeholder="Phone Number" required />
               <input type="password" name="user_pass"placeholder="Password" required />
               <input type="text" name="user_mat" placeholder="School Matricule" required />
               <input class="button_submit" type="submit" value="Signup">
@@ -113,6 +113,7 @@
     
       <div class="form login">
           <header>Login</header>
+          
           <form action="POST">
               <input type="email" name="user_email" placeholder="User Email" required>
               <input type="password" name="user_password" placeholder="Password" required>
@@ -135,7 +136,8 @@
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script src="js/login.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="login.js"></script>
   <script src="js/whatsapp.js"></script>
 </body>
 

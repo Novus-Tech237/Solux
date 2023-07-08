@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <?php
+  // Check if the form was submitted
+  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Connect to the database
+    $host = "localhost";
+    $username = "your_username";
+    $password = "your_password";
+    $database = "your_database";
+    $conn = mysqli_connect($host, $username, $password, $database);
+
+    // Check connection
+    if (!$conn) {
+      die("Connection failed: " . mysqli_connect_error());
+    }
+
+    // Retrieve form data
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    // Insert data into the database
+    $sql = "INSERT INTO contacts (name, email, message) VALUES ('$name', '$email', '$message')";
+    if (mysqli_query($conn, $sql)) {
+      echo "Data inserted successfully";
+    } else {
+      echo "Error inserting data: " . mysqli_error($conn);
+    }
+
+    // Close connection
+    mysqli_close($conn);
+  }
+  ?>
+
+  <form method="post" action="">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+    
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
